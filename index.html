@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Calgary - Newcomer Resources</title>
+    <meta name="description" content="A helpful guide for newcomers to Calgary. Schools, shopping, banking, internet, and more.">
+    <style>
+        :root {
+            --calgary-green: #007A33;
+            --calgary-white: #FFFFFF;
+            --desi-gold: #E8B923;
+            --warm-orange: #FF6B35;
+            --light-bg: #F8F9FA;
+            --text-dark: #2D3436;
+            --text-light: #636E72;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--light-bg);
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--calgary-green) 0%, #005226 100%);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Welcome Section */
+        .welcome {
+            background: white;
+            padding: 3rem 1rem;
+            text-align: center;
+            border-bottom: 4px solid var(--desi-gold);
+        }
+
+        .welcome h2 {
+            color: var(--calgary-green);
+            margin-bottom: 1rem;
+        }
+
+        .welcome p {
+            max-width: 700px;
+            margin: 0 auto 1.5rem;
+            color: var(--text-light);
+        }
+
+        /* Quick Links Grid */
+        .quick-links {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .quick-links h3 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        }
+
+        .card-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card h4 {
+            color: var(--calgary-green);
+            margin-bottom: 0.5rem;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        /* Newsletter */
+        .newsletter {
+            background: var(--calgary-green);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .newsletter h3 {
+            margin-bottom: 1rem;
+        }
+
+        .newsletter p {
+            max-width: 500px;
+            margin: 0 auto 1.5rem;
+            opacity: 0.9;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .newsletter-form input {
+            padding: 0.75rem 1rem;
+            border: none;
+            border-radius: 6px;
+            width: 250px;
+            font-size: 1rem;
+        }
+
+        .newsletter-form button {
+            background: var(--desi-gold);
+            color: var(--text-dark);
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .newsletter-form button:hover {
+            background: #d4a820;
+        }
+
+        /* Disclaimer */
+        .disclaimer {
+            background: #f0f0f0;
+            padding: 1.5rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        footer p {
+            opacity: 0.7;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .newsletter-form input {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🧡 Welcome to Calgary!</h1>
+        <p>Your newcomer guide to settling in YYC</p>
+    </header>
+
+    <section class="welcome">
+        <h2>नमस्ते! Hello! 👋</h2>
+        <p>
+            Moving to a new city is hard. We created this page to help you settle in Calgary faster. 
+            Whether you're here for school, work, or a fresh start — find everything you need in one place.
+            <br><br>
+            <strong>This is for you, not for us.</strong>
+        </p>
+    </section>
+
+    <section class="quick-links">
+        <h3>Quick Links</h3>
+        <div class="grid">
+            <a href="schools.html" class="card">
+                <div class="card-icon">🏫</div>
+                <h4>Schools</h4>
+                <p>Find the right school for your kids - public, private, or IB programs</p>
+            </a>
+
+            <a href="shopping.html" class="card">
+                <div class="card-icon">🛒</div>
+                <h4>Shopping</h4>
+                <p>Indian grocery stores, Walmart, Costco, and malls near you</p>
+            </a>
+
+            <a href="renting.html" class="card">
+                <div class="card-icon">🏠</div>
+                <h4>Renting</h4>
+                <p>Find a place to live - websites, average prices, and neighborhood tips</p>
+            </a>
+
+            <a href="internet.html" class="card">
+                <div class="card-icon">📶</div>
+                <h4>Internet</h4>
+                <p>Compare internet providers and find the best deals in Calgary</p>
+            </a>
+
+            <a href="banking.html" class="card">
+                <div class="card-icon">💳</div>
+                <h4>Banking</h4>
+                <p>Open a bank account - no-fee options and tips for newcomers</p>
+            </a>
+
+            <a href="investing.html" class="card">
+                <div class="card-icon">📈</div>
+                <h4>Investing</h4>
+                <p>Start investing in Canada - TFSA, RRSP, and beginner-friendly platforms</p>
+            </a>
+
+            <a href="phone.html" class="card">
+                <div class="card-icon">📱</div>
+                <h4>Phone Plans</h4>
+                <p>Compare mobile plans - prepaid, postpaid, and family options</p>
+            </a>
+
+            <a href="utilities.html" class="card">
+                <div class="card-icon">⚡</div>
+                <h4>Utilities</h4>
+                <p>Set up electricity, gas, water, and other home services</p>
+            </a>
+
+            <a href="travel.html" class="card">
+                <div class="card-icon">🏔️</div>
+                <h4>Weekend Trips</h4>
+                <p>Explore Banff, Canmore, Lake Louise, and nearby adventures</p>
+            </a>
+
+            <a href="food.html" class="card">
+                <div class="card-icon">🍛</div>
+                <h4>Indian Food</h4>
+                <p>Desi restaurants, buffets, and where to get ingredients</p>
+            </a>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h3>📧 Stay Connected</h3>
+        <p>Get updates about Calgary events, tips, and community news delivered to your inbox.</p>
+        <form class="newsletter-form" action="#" method="post">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <div class="disclaimer">
+        <p>This page is made with 💛 for the newcomer community. We may use affiliate links to support hosting costs, but we'll always be honest with you. Our recommendations are based on real experiences, not commissions.</p>
+    </div>
+
+    <footer>
+        <p>New2Calgary © 2026 — Made with ❤️ for our community</p>
+    </footer>
+</body>
+</html>
